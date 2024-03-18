@@ -1,0 +1,8 @@
+Libreria
+gcc -fPIC -shared -o lib.so lib.c
+
+Programa AVX
+gcc -march=native -o programa-avx programa-avx.c
+
+Eg
+gcc -fPIC -shared -march=native -o vectorScalarMultiplyAVX.so vectorScalarMultiplyAVX.c
