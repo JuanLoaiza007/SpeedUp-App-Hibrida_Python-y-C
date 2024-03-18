@@ -2,7 +2,7 @@
 gcc -fPIC -shared -o nombre_libreria.so nombre_libreria.c
 
 ** Programa AVX **
-gcc -march=native -o nombre_programa-avx nombre_programa-avx.c
+gcc -march=native -o nombre_programa_avx nombre_programa_avx.c
 
 ** Libreria aprovechando AVX **
 gcc -fPIC -shared -march=native -o nombre_programa.so nombre_programa.c
