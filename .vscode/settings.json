@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.txt": "bibtex",
+    "stdio.h": "c",
+    "assert.h": "c",
+    "immintrin.h": "c"
+  }
+}
