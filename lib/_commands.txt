@@ -1,8 +1,11 @@
-Libreria
-gcc -fPIC -shared -o lib.so lib.c
+** Libreria **
+gcc -fPIC -shared -o nombre_libreria.so nombre_libreria.c
 
-Programa AVX
-gcc -march=native -o programa-avx programa-avx.c
+** Programa AVX **
+gcc -march=native -o nombre_programa-avx nombre_programa-avx.c
 
-Eg
-gcc -fPIC -shared -march=native -o vectorScalarMultiplyAVX.so vectorScalarMultiplyAVX.c
+** Libreria aprovechando AVX **
+gcc -fPIC -shared -march=native -o nombre_programa.so nombre_programa.c
+
+** Ejemplo **
+gcc -fPIC -shared -o vectorScalarMultiplyAVX.so vectorScalarMultiplyAVX.c
