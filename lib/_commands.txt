@@ -8,4 +8,4 @@ gcc -march=native -o nombre_programa_avx nombre_programa_avx.c
 gcc -fPIC -shared -march=native -o nombre_programa.so nombre_programa.c
 
 ** Ejemplo **
-gcc -fPIC -shared -o vectorScalarMultiplyAVX.so vectorScalarMultiplyAVX.c
+gcc -fPIC -shared -march=native -o vectorScalarMultiplyAVX.so vectorScalarMultiplyAVX.c
