@@ -27,7 +27,7 @@ def main(arreglo, escalar):
     # Llamar a la función con el puntero al array
     libVecScMult.vectorScalarMultiply(vect_ptr, escalar, result_ptr, length)
 
-    print("Resultado: ", resultado)
+    # print("Resultado: ", resultado)
 
 
 if __name__ == "__main__":
