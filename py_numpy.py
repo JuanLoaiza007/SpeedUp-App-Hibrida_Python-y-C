@@ -5,7 +5,7 @@ def main(arreglo, escalar):
     arreglo = np.array(arreglo)
     resultado = arreglo * escalar
 
-    print("Resultado: ", resultado)
+    # print("Resultado: ", resultado)
 
 
 if __name__ == "__main__":

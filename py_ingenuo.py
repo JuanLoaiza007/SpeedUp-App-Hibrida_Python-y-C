@@ -4,7 +4,7 @@ def main(arreglo, escalar):
     for elemento in arreglo:
         resultado.append(elemento * escalar)
 
-    print("Resultado: ", resultado)
+    # print("Resultado: ", resultado)
 
 
 if __name__ == "__main__":
