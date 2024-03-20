@@ -5,18 +5,21 @@ import cProfile
 import pstats
 import timeit
 
-arreglo = [i for i in range(10000000)]
+n = 1000000
+arreglo = [i for i in range(n)]
 escalar = 2.0
+
+print(f"Prueba con vector de {n} números \n")
 
 # Medir el tiempo de ejecución con timeit
 print("Con timeit")
-ingenuo_time = timeit.timeit(lambda: ingenuo.main(arreglo, escalar), number=1)
-numpy_time = timeit.timeit(lambda: numpy.main(arreglo, escalar), number=1)
-avx_time = timeit.timeit(lambda: avx.main(arreglo, escalar), number=1)
+ingenuo_time = timeit.timeit(lambda: ingenuo.main(arreglo, escalar), number=10)
+numpy_time = timeit.timeit(lambda: numpy.main(arreglo, escalar), number=10)
+avx_time = timeit.timeit(lambda: avx.main(arreglo, escalar), number=10)
 
-print("Tiempo de ejecución (ingenuo):", ingenuo_time)
-print("Tiempo de ejecución (numpy):", numpy_time)
-print("Tiempo de ejecución (avx):", avx_time)
+print("Tiempo de ejecución (ingenuo):", ingenuo_time/10)
+print("Tiempo de ejecución (numpy):", numpy_time/10)
+print("Tiempo de ejecución (avx):", avx_time/10)
 
 print("Speedups:")
 
